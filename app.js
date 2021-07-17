@@ -53,6 +53,10 @@ var renderFeed = function(user) {
       $shareButton.appendTo($tweetDiv);
 
       index -= 1;
+      $('div.username').click(function() {
+        var user = $(this).text().slice(1);
+        handleUsernameClick(user);
+        });
     }
   } else if(user) {
     $("#feed").children('.tweet').remove();
@@ -87,6 +91,10 @@ var renderFeed = function(user) {
        $shareButton.appendTo($tweetDiv);
 
       index -= 1;
+      $('div.username').click(function() {
+        var user = $(this).text().slice(1);
+        handleUsernameClick(user);
+        });
      }
     };
   };
@@ -110,7 +118,7 @@ var handleUsernameClick = function(user) {
 
 
 // Set event listeners (providing appropriate handlers as input)
-$title.on("click", alertTitle);
+$title.click(alertTitle);
 
 
 
@@ -122,11 +130,12 @@ $feed.appendTo($app);
 
 renderFeed();
 
-$('button').on("click", refreshFeed);
-$('.username').on("click", function() {
-  console.log('hi');
+$('div.username').click(function() {
 var user = $(this).text().slice(1);
-console.log(user);
 handleUsernameClick(user);
 });
+
+$('button').click(refreshFeed);
+
+
 });
