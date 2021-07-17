@@ -34,21 +34,20 @@ var renderFeed = function() {
       var $tweetMsg = $('<p class="message">' + tweet.message + '</p>');
       $tweetMsg.appendTo($tweetDiv);
 
-      var $timeStamp = $('<div class="timestamp">' + tweet.created_at + '</div>');
+      var $timeStamp = $('<div class="timestamp">' + jQuery.timeago(tweet.created_at) + '</div>');
       $timeStamp.appendTo($tweetDiv);
 
-      var $commentButton = $('<img class="icon comment" src="assets/icons/placeholder.png">');
+      var $commentButton = $('<i class="icon comment fas fa-comment-dots fa-2x"></i>');
       $commentButton.appendTo($tweetDiv);
 
-      var $retweetButton = $('<img class="icon retweet" src="assets/icons/placeholder.png">');
+      var $retweetButton = $('<i class="icon retweet far fa-paper-plane fa-2x" ></i>');
       $retweetButton.appendTo($tweetDiv);
 
-      var $likeButton = $('<img class="icon like" src="assets/icons/placeholder.png">');
+      var $likeButton = $('<i class="icon like fab fa-gratipay fa-2x" ></i>');
       $likeButton.appendTo($tweetDiv);
 
-      var $shareButton = $('<img class="icon share" src="assets/icons/placeholder.png">');
+      var $shareButton = $('<i class="icon share fas fa-share-alt fa-2x" ></i>');
       $shareButton.appendTo($tweetDiv);
-
 
       index -= 1;
     }

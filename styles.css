@@ -8,10 +8,29 @@ html, body, #app {
 /* Continue building out the CSS styling for your Twiddler app below! We got you started by
 providing a space for you to apply styles to your app's outermost HTML element - the #app itself. */
 
+/*font-family: 'Hind Guntur', sans-serif;*/
+
+
 #app {
   background-color: 'white';
   color: 'black';
 
+
+}
+
+.fa-comment-dots:hover {
+  color: rgb(4, 0, 247);
 }
 
 
+.fa-paper-plane:hover {
+  color: rgb(4, 0, 247);
+}
+
+.fa-gratipay:hover {
+  color: rgb(255, 0, 0);
+}
+
+.fa-share-alt:hover {
+  color: rgb(4, 0, 247);
+}
