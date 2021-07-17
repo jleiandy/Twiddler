@@ -5,7 +5,7 @@ $app.html('');
 
 // Create new HTML elements
 var $title = $('<h1>Twiddler</h1>');
-var $updateButton = $('<button class="update-feed">Update Feed</button>');
+var $updateButton = $('<button id="update-feed">Update Feed</button>');
 var $feed = $('<div id=feed></div>')
 
 
