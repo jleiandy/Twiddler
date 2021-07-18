@@ -136,5 +136,5 @@ handleUsernameClick(user);
 
 $('button').click(refreshFeed);
 
-
+window.isItBeautifulYet = true;
 });
