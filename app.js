@@ -124,9 +124,8 @@ $title.click(alertTitle);
 
 // Append new HTML elements to the DOM
 $title.appendTo($app);
-$updateButton.appendTo($app);
 $feed.appendTo($app);
-
+$($updateButton).insertAfter($feed);
 
 renderFeed();
 

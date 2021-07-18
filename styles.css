@@ -10,12 +10,154 @@ providing a space for you to apply styles to your app's outermost HTML element -
 
 /*font-family: 'Hind Guntur', sans-serif;*/
 
+@font-face {
+  font-family: 'VALORANT';
+  src: url('assets/fonts/VALORANT-Regular.eot');
+  src: url('assets/fonts/VALORANT-Regular.eot?#iefix') format('embedded-opentype'),
+      url('assets/fonts/VALORANT-Regular.woff2') format('woff2'),
+      url('assets/fonts/VALORANT-Regular.woff') format('woff'),
+      url('assets/fonts/VALORANT-Regular.ttf') format('truetype'),
+      url('assets/fonts/VALORANT-Regular.svg#VALORANT-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body {
+  background-color: 'white';
+  background-image: url(assets/img/valorantbackground.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
 
 #app {
   background-color: 'white';
   color: 'black';
+  margin: 0;
+  text-align: center;
+}
+
+button {
+  font-family: 'VALORANT';
+  width: 200px;
+  margin: 30px 0 0 0;
+}
+
+h1 {
+  color: rgb(255, 0, 0);
+  font-family: 'VALORANT';
+  font-size: 100px;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0px 0px 0 rgb(175,-73,0),
+  1px 1px 0 rgb(128,-120,0),
+  2px 2px 0 rgb(82,-166,0),
+  3px 3px 0 rgb(35,-213,0),
+  4px 4px  0 rgb(-11,-259,0),
+  5px 5px 4px rgba(0,0,0,0.59),
+  5px 5px 1px rgba(0,0,0,0.5),
+  0px 0px 4px rgba(0,0,0,.2);
+}
+
+button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+
+}
+
+#feed {
+  display: block;
+  height: 700px;
+  width: 700px;
+  border: none;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  scrollbar-gutter: always;
 
 
+  padding: 0;
+}
+
+.tweet {
+  position: relative;
+  border: 0px solid black;
+  margin: 0px 0 10px 0px;
+  background: rgba(196, 2, 2, 0.4);
+  border-radius: 5px;
+  height: 250px;
+}
+
+.profile-photo {
+ margin: 0;
+ height: 80px;
+ width: 100px;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ border-radius: 5px;
+ padding: 5px;
+}
+
+.username {
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: 103px;
+  font-family: 'VALORANT';
+}
+
+.message {
+  margin: 0;
+  position: absolute;
+  top: 100px;
+  font-family: 'VALORANT';
+  font-size: 30px;
+  height: 70px;
+  width: 650px;
+  font-weight: bold;
+}
+
+.timestamp {
+  margin: 0;
+  bottom: 0;
+  position: absolute;
+  font-family: 'VALORANT';
+  font-size: 10px;
+  font-style: italic;
+}
+
+.comment, .retweet, .like, .share {
+  margin: 0;
+  position: absolute;
+  bottom: 15px;
+  height: 35px;
+  width: 35px;
+}
+
+.comment {
+  left: 300px;
+}
+
+.retweet {
+  left: 400px;
+}
+
+.like {
+  left: 500px;
+}
+
+.share {
+  left: 600px;
 }
 
 .fa-comment-dots:hover {
@@ -34,3 +176,23 @@ providing a space for you to apply styles to your app's outermost HTML element -
 .fa-share-alt:hover {
   color: rgb(4, 0, 247);
 }
+
+
+#feed::-webkit-scrollbar {
+  width: 3px;
+}
+
+#feed::-webkit-scrollbar-track {
+  background:rgb(255, 0, 0, 0);
+  border-radius: 20px;
+}
+
+#feed::-webkit-scrollbar-thumb {
+  background:rgb(0, 0, 0, .6);
+  border-radius: 20px;
+  size: 5px;
+}
+
+#feed:hover {
+  overflow-y: auto;
+ }
