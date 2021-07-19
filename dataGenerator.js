@@ -7,10 +7,10 @@
 window.streams = {};
 streams.home = [];
 streams.users = {};
-streams.users.jett = [];
-streams.users.omen = [];
-streams.users.killjoy = [];
-streams.users.kayo = [];
+streams.users.AwpGod = [];
+streams.users.OctoOmen = [];
+streams.users.roombaH8R = [];
+streams.users.builtDiff = [];
 window.users = Object.keys(streams.users);
 
 // utility function for adding tweets to our data structures
@@ -27,11 +27,11 @@ var randomElement = function(array) {
 };
 
 // random tweet generator
-var opening = ['just', '', '', '', '', 'ask me how i', 'completely', 'nearly', 'productively', 'efficiently', 'last night i', 'the president', 'that wizard', 'a ninja', 'a seedy old man'];
-var verbs = ['downloaded', 'interfaced', 'deployed', 'developed', 'built', 'invented', 'experienced', 'navigated', 'aided', 'enjoyed', 'engineered', 'installed', 'debugged', 'delegated', 'automated', 'formulated', 'systematized', 'overhauled', 'computed'];
-var objects = ['my', 'your', 'the', 'a', 'my', 'an entire', 'this', 'that', 'the', 'the big', 'a new form of'];
-var nouns = ['cat', 'koolaid', 'system', 'city', 'worm', 'cloud', 'potato', 'money', 'way of life', 'belief system', 'security system', 'bad decision', 'future', 'life', 'pony', 'mind'];
-var tags = ['#techlife', '#burningman', '#sf', 'but only i know how', 'for real', '#sxsw', '#ballin', '#omg', '#yolo', '#magic', '', '', '', ''];
+var opening = ['just', '', '', '', '', 'ask me how i', 'completely', 'nearly', 'easily', 'quickly', 'last night i', 'the spike', 'that boyjaywon', 'a cracked duelist', 'a boosted sage'];
+var verbs = ['aced', 'destroyed', 'lost', 'won', 'tilted', 'invented', 'experienced', 'met', 'aided', 'enjoyed', 'engineered', 'installed', 'debugged', 'delegated', 'automated', 'formulated', 'trashed', 'overhauled', 'computed'];
+var objects = ['my', 'your', 'the', 'a', 'my', 'an entire', 'this', 'that', 'the', 'the worst', 'a new form of'];
+var nouns = ['round', 'koolaid', 'system', 'map', 'spike', 'game', 'team', 'cha-ching', 'way of life', 'belief system', 'ELO', 'bad decision', 'trash', 'life', 'OP', 'mind'];
+var tags = ['#rushSite', '#ggEZ', '#sf', '#SHEEEEESH', 'for real', '#ayowtf', '#ballin', '#omg', '#yolo', '#sadge', '', '', '', ''];
 
 var randomMessage = function() {
   return [randomElement(opening), randomElement(verbs), randomElement(objects), randomElement(nouns), randomElement(tags)].join(' ');
