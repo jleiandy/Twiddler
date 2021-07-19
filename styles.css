@@ -115,6 +115,10 @@ button:active {
   font-family: 'VALORANT';
 }
 
+.username:hover {
+  color:blueviolet;
+}
+
 .message {
   margin: 0;
   position: absolute;
