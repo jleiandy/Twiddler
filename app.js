@@ -12,10 +12,12 @@ var $feed = $('<div id=feed></div>')
 
 
 // Create event handler functions
+
 var alertTitle = function(event) {
     console.log(event);
     alert('The title of this page is: ' + event.target.innerText)
-  }
+    counter++
+}
 
 var renderFeed = function(user) {
 
@@ -109,7 +111,7 @@ var refreshFeed = function() {
 }
 
 var handleUsernameClick = function(user) {
-  if($('button').text() === 'Update Feed') {
+  if($('button').text() === 'Update Feed'){
   $('button').html('Back');
   }
   renderFeed(user)
