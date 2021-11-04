@@ -1,4 +1,4 @@
-/* These CSS rules apply to the <html>, <body>, and <div id="app"> HTML elements in index.html */
+/* These CSS rules apply to the <html>, <body>, and <div id="app"> HTML elements in index.html
 html, body, #app {
   height: 100%;
   width: 100%;
@@ -13,21 +13,21 @@ providing a space for you to apply styles to your app's outermost HTML element -
 @font-face {
   font-family: 'VALORANT';
   src: url('assets/fonts/VALORANT-Regular.eot');
-  src: url('assets/fonts/VALORANT-Regular.eot?#iefix') format('embedded-opentype'),
-      url('assets/fonts/VALORANT-Regular.woff2') format('woff2'),
-      url('assets/fonts/VALORANT-Regular.woff') format('woff'),
-      url('assets/fonts/VALORANT-Regular.ttf') format('truetype'),
-      url('assets/fonts/VALORANT-Regular.svg#VALORANT-Regular') format('svg');
+  src: url('assets/fonts/VALORANT-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('assets/fonts/VALORANT-Regular.woff2') format('woff2'),
+    url('assets/fonts/VALORANT-Regular.woff') format('woff'),
+    url('assets/fonts/VALORANT-Regular.ttf') format('truetype'),
+    url('assets/fonts/VALORANT-Regular.svg#VALORANT-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-
-
 html {
   background-color: 'white';
-  background: url(assets/img/valorantbackground.png) no-repeat center center fixed;
+  background: url(assets/img/valorantbackground.png) no-repeat center center
+    fixed;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -52,14 +52,10 @@ h1 {
   font-size: 100px;
   margin: 0;
   text-align: center;
-  text-shadow: 0px 0px 0 rgb(175,-73,0),
-  1px 1px 0 rgb(128,-120,0),
-  2px 2px 0 rgb(82,-166,0),
-  3px 3px 0 rgb(35,-213,0),
-  4px 4px  0 rgb(-11,-259,0),
-  5px 5px 4px rgba(0,0,0,0.59),
-  5px 5px 1px rgba(0,0,0,0.5),
-  0px 0px 4px rgba(0,0,0,.2);
+  text-shadow: 0px 0px 0 rgb(175, -73, 0), 1px 1px 0 rgb(128, -120, 0),
+    2px 2px 0 rgb(82, -166, 0), 3px 3px 0 rgb(35, -213, 0),
+    4px 4px 0 rgb(-11, -259, 0), 5px 5px 4px rgba(0, 0, 0, 0.59),
+    5px 5px 1px rgba(0, 0, 0, 0.5), 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -72,7 +68,6 @@ button {
 button:active {
   background-color: white;
   color: black;
-
 }
 
 #feed {
@@ -97,14 +92,14 @@ button:active {
 }
 
 .profile-photo {
- margin: 0;
- height: 80px;
- width: 100px;
- position: absolute;
- top: 0px;
- left: 0px;
- border-radius: 5px;
- padding: 5px;
+  margin: 0;
+  height: 80px;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .username {
@@ -116,7 +111,8 @@ button:active {
 }
 
 .username:hover {
-  color:blueviolet;
+  color: blueviolet;
+  cursor: pointer;
 }
 
 .message {
@@ -139,7 +135,10 @@ button:active {
   font-style: italic;
 }
 
-.comment, .retweet, .like, .share {
+.comment,
+.retweet,
+.like,
+.share {
   margin: 0;
   position: absolute;
   bottom: 15px;
@@ -167,7 +166,6 @@ button:active {
   color: rgb(4, 0, 247);
 }
 
-
 .fa-paper-plane:hover {
   color: rgb(4, 0, 247);
 }
@@ -180,22 +178,21 @@ button:active {
   color: rgb(4, 0, 247);
 }
 
-
 #feed::-webkit-scrollbar {
   width: 3px;
 }
 
 #feed::-webkit-scrollbar-track {
-  background:rgb(255, 0, 0, 0);
+  background: rgb(255, 0, 0, 0);
   border-radius: 20px;
 }
 
 #feed::-webkit-scrollbar-thumb {
-  background:rgb(0, 0, 0, .6);
+  background: rgb(0, 0, 0, 0.6);
   border-radius: 20px;
   size: 5px;
 }
 
 #feed:hover {
   overflow-y: auto;
- }
+}
