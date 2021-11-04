@@ -72,7 +72,7 @@ button:active {
 
 #feed {
   display: block;
-  height: 700px;
+  height: 80vh;
   width: 700px;
   border: none;
   margin: auto;
@@ -195,4 +195,8 @@ button:active {
 
 #feed:hover {
   overflow-y: auto;
+}
+
+body {
+  height: 80vh;
 }
