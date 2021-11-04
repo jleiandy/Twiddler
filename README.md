@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://giphy.com/embed/sJ9QKIFTrOWnj3dFWc" alt="Twiddler Demo" >
+  <img src="https://media1.giphy.com/media/sJ9QKIFTrOWnj3dFWc/giphy.gif?cid=790b7611bb6fe547e540dc46cb56f1343e916b2670b0a033&rid=giphy.gif&ct=g" alt="Twiddler Demo" >
 </div>
 
 Twiddler is a shallow Twitter frontend clone created with vanilla Javascript, jQuery, and CSS3.
