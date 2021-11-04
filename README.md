@@ -8,7 +8,7 @@
 
 ## About
 
-Twiddler is a shallow Twitter frontend clone created with vanilla Javascript, jQuery, and CSS3.
+Twiddler is a shallow Twitter front-end clone created with vanilla Javascript, jQuery, and CSS3.
 
 ## App Features
 
