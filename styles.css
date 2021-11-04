@@ -40,12 +40,6 @@ html {
   text-align: center;
 }
 
-button {
-  font-family: 'VALORANT';
-  width: 200px;
-  margin: 30px 0 0 0;
-}
-
 h1 {
   color: rgb(255, 0, 0);
   font-family: 'VALORANT';
@@ -59,10 +53,12 @@ h1 {
 }
 
 button {
+  font-family: 'VALORANT';
+  width: 200px;
+  margin: 10px 0 0 0;
   background-color: black;
   color: white;
   cursor: pointer;
-  top: 50px;
 }
 
 button:active {
